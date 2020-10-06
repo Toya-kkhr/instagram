@@ -6,6 +6,7 @@
 //  Copyright © 2020 加古原　冬弥. All rights reserved.
 //
 
+import SafariServices
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -197,10 +198,65 @@ class LoginViewController: UIViewController {
         
     }
     
-    @objc private func didTapLoginButton(){}
-    @objc private func didTapTermsButton(){}
-    @objc private func didTapPrivacyButton(){}
-    @objc private func didTapCreateAccountButton(){}
+    @objc private func didTapLoginButton(){
+        passwordField.resignFirstResponder()
+        usernameEmailField.resignFirstResponder()
+        
+        guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,
+            let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
+                return
+        }
+        
+        //login functionality
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"), usernameEmail.contains(".") {
+            //email
+            email = usernameEmail
+            
+        }else{
+            //username
+            username = usernameEmail
+        }
+        
+        AuthManager.shared.loginUser(username: username, email:email, password: password){ success in
+            DispatchQueue.main.async {
+                if success {
+                    //user kogged in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                else {
+                    //error accurred
+                    let alert = UIAlertController(title: "Login error",
+                                                  message: "We were unable to log in.",
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+           
+        }
+    }
+    
+    @objc private func didTapTermsButton(){
+        guard let url = URL(string: "https://help.instagram.com/581066165581870?ref=dp") else {
+            return
+        }
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+    }
+    @objc private func didTapPrivacyButton(){
+        guard let url = URL(string: "https://help.instagram.com/519522125107875") else {
+                  return
+              }
+              let vc = SFSafariViewController(url: url)
+              present(vc, animated: true)
+    }
+    @objc private func didTapCreateAccountButton(){
+        let vc = RegitrationViewController()
+        present(vc, animated: true)
+    }
     
 }
 
