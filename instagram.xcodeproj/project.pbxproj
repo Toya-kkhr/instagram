@@ -21,7 +21,7 @@
 		A34986792523766C006B89EE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34986782523766C006B89EE /* PostViewController.swift */; };
 		A349867B252376AC006B89EE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349867A252376AC006B89EE /* EditProfileViewController.swift */; };
 		A34986812523779E006B89EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34986802523779E006B89EE /* LoginViewController.swift */; };
-		A3498683252377BC006B89EE /* RegitrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3498682252377BC006B89EE /* RegitrationViewController.swift */; };
+		A3498683252377BC006B89EE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3498682252377BC006B89EE /* RegistrationViewController.swift */; };
 		A349868525237814006B89EE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349868425237814006B89EE /* SettingViewController.swift */; };
 		A349868725237831006B89EE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349868625237831006B89EE /* ListViewController.swift */; };
 		A349868925237855006B89EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349868825237854006B89EE /* SearchViewController.swift */; };
@@ -52,7 +52,7 @@
 		A34986782523766C006B89EE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A349867A252376AC006B89EE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A34986802523779E006B89EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A3498682252377BC006B89EE /* RegitrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegitrationViewController.swift; sourceTree = "<group>"; };
+		A3498682252377BC006B89EE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A349868425237814006B89EE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A349868625237831006B89EE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A349868825237854006B89EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				A34986802523779E006B89EE /* LoginViewController.swift */,
-				A3498682252377BC006B89EE /* RegitrationViewController.swift */,
+				A3498682252377BC006B89EE /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 				A349866C2523484D006B89EE /* CameraViewController.swift in Sources */,
 				A349866E2523487F006B89EE /* NotificationViewController.swift in Sources */,
 				A3C4DE7D2524609200D93B22 /* DatabaseManager.swift in Sources */,
-				A3498683252377BC006B89EE /* RegitrationViewController.swift in Sources */,
+				A3498683252377BC006B89EE /* RegistrationViewController.swift in Sources */,
 				A34986792523766C006B89EE /* PostViewController.swift in Sources */,
 				A349868D25237961006B89EE /* PublishPostViewController.swift in Sources */,
 				A3C4DE81252463FB00D93B22 /* StorageManager.swift in Sources */,

@@ -254,8 +254,9 @@ class LoginViewController: UIViewController {
               present(vc, animated: true)
     }
     @objc private func didTapCreateAccountButton(){
-        let vc = RegitrationViewController()
-        present(vc, animated: true)
+        let vc = RegistrationViewController()
+        vc.title = "Create Acount"
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
     
 }

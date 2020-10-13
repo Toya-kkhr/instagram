@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="IRd-z9-D1R" kind="relationship" relationship="viewControllers" id="X5S-n6-y7F"/>
@@ -33,7 +33,7 @@
         <scene sceneID="cCd-NM-mcP">
             <objects>
                 <navigationController id="RWK-aj-Fmx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="utE-40-9eH"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="utE-40-9eH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y2A-dJ-a4e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,7 +113,6 @@
         <!--Profile View Controller-->
         <scene sceneID="6Xi-1A-YcK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UH3-zv-ual" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="aIg-Wq-O4Z" customClass="ProfileViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vbV-Yn-mJX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -123,6 +122,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="t6M-p8-qAt"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UH3-zv-ual" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6" y="1171"/>
         </scene>
@@ -164,7 +164,7 @@
         <scene sceneID="b6g-xY-eS5">
             <objects>
                 <navigationController id="UuH-hL-31M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="ZbU-VZ-hn7"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="ZbU-VZ-hn7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dcW-nC-oDz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,9 +196,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="110"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
