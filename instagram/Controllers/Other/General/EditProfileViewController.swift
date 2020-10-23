@@ -12,19 +12,39 @@ class EditProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "保存",
+                                                            style: .done,
+                                                            target: self,
+                                                            action: #selector(didTapSave))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "キャンセル",
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(didTapCancel))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func didTapSave() {
+        
     }
-    */
-
+    
+    @objc private func didTapCancel() {
+        
+    }
+    
+    @objc private func didTapChangeProfilePicture() {
+        let actionSheet = UIAlertController(title: "プロフィール写真",
+                                            message: "プロフィール写真を変更",
+                                            preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "写真を撮影する",style: .default,handler: { _ in
+        }))
+        actionSheet.addAction(UIAlertAction(title: "ライブラリから選択する", style: .default, handler: { _ in
+        }))
+        actionSheet.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
+        actionSheet.popoverPresentationController?.sourceView = view
+        actionSheet.popoverPresentationController?.sourceRect = view.bounds
+        
+        present(actionSheet, animated: true)
+        
+    }
 }
